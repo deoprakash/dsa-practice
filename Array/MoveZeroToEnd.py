@@ -19,20 +19,9 @@ def moveZeroes(arr):
 
     for i in range(len(arr)):
         if arr[i] != 0:
-            print("before swapping: ", arr)
-            print( f"iteration: {i} -> {arr[i]}, Count No.: {count} -> {arr[count]}")
             arr[count], arr[i] = arr[i], arr[count]
             count += 1
-            print("after swapping: ", arr)
-            print( f"iteration: {i} -> {arr[i]}, Count No.: {count} -> {arr[count]}")
-            print("==================")
-        
-        else:
-            
-            print(f"Skipped")
-            print( f"iteration: {i} -> {arr[i]}, Count No.: {count} -> {arr[count]}")
-            print("=================")
-            
+    print(arr)
 
     
 
